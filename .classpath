@@ -9,6 +9,7 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Beta001/lib/Plotter/WSjzy3D"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Utils"/>
 	<classpathentry kind="lib" path="lib/Graph/GephiStream/gephi-toolkit.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

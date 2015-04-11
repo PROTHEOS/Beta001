@@ -36,6 +36,63 @@ public class BasicObject {
 		logger.info("Logger Name: "+logger.getName());
 
 	}
+public void finalize(){
+	//this.setLogState(null);
+
+	System.gc();
+}
+
+
+
+
+	/**
+	 * Date: 05/04/2015
+	 * Time: 11:22:11
+	 * Developer: Marcelo
+	 * Objective: <>
+	 * Receive: Null
+	 * Return: @return the logState
+	 * TODO: TODO
+	 */
+	public boolean isLogState() {
+		return logState;
+	}
+
+
+
+
+	/**
+	/**
+	 * Date: 05/04/2015
+	 * Time: 11:22:11
+	 * Developer: Marcelo
+	 * Objective: <>
+	 * Receive: @param logState the logState to set
+	 * Return: @return the logState
+	 * TODO: TODO
+	 */
+	public void setLogState(boolean logState) {
+		this.logState = logState;
+	}
+
+
+
+
+	/**
+	 * Date: 05/04/2015
+	 * Time: 11:22:52
+	 * Developer: Marcelo
+	 * Objective: <>
+	 * Receive: Null
+	 * Return: @return the logger
+	 * TODO: TODO
+	 */
+	public static Logger getLogger() {
+		return logger;
+	}
+
+
+
 
 	/**
 	 * Date: 24/01/2015
