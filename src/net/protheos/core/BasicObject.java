@@ -8,7 +8,9 @@
  * Developer: Marcelo Gagliano
  */
 package net.protheos.core;
+import java.util.Date;
 import java.util.logging.*;
+import java.util.Calendar;
 
 /**
  * @author Marcelo
@@ -28,17 +30,22 @@ public class BasicObject {
 	 */
 
 	boolean logState = true;
+	int ID = (int) (System.currentTimeMillis() & 0xfffffff);
+	Date creationDate = Calendar.getInstance().getTime();
 	private static final Logger logger = Logger.getLogger(BasicObject.class.getName());
 
 
 	public BasicObject() {
 		// TODO Auto-generated constructor stub
-		logger.info("Logger Name: "+logger.getName());
+
+		logger.info("Object " + logger.getName() + " (" + ID + ") created on " + creationDate.toString() + ".");
 
 	}
 public void finalize(){
 	//this.setLogState(null);
 
+	logger.info("Object " + logger.getName() + " (" + ID + ") finalized on " + Calendar.getInstance().getTime() + ".");
+	System.runFinalization();
 	System.gc();
 }
 
@@ -107,6 +114,8 @@ public void finalize(){
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		BasicObject x = new BasicObject();
+		x.finalize();
 	}
 
 }
