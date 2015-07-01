@@ -1,0 +1,15 @@
+net.protheos
+net.protheos.core
+net.protheos.graph
+net.protheos.graph.database
+net.protheos.graph.demos
+net.protheos.neural.hopfield
+net.protheos.neural.matrix
+net.protheos.neural.matrix.exception
+net.protheos.nlp
+net.protheos.plotter
+net.protheos.utils.json
+net.protheos.utils.json.zip
+test.protheos.core
+test.protheos.neural.matrix.exception
+test.protheos.nlp

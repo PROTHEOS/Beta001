@@ -1,0 +1,419 @@
+2015-07-01 19:56:07.244+0000 INFO  [org.neo4j]: You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7 or OpenJDK(TM) 7.
+2015-07-01 19:56:07.289+0000 INFO  [org.neo4j]: No locking implementation specified, defaulting to 'community'
+2015-07-01 19:56:07.400+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2015-07-01 19:56:07.402+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.strings.mapped_memory=46M
+    ephemeral=false
+    neostore.nodestore.db.mapped_memory=15M
+    store_dir=target/graphbase
+    neostore.propertystore.db.arrays.mapped_memory=53M
+    neostore.propertystore.db.mapped_memory=54M
+    neostore.relationshipstore.db.mapped_memory=66M
+2015-07-01 19:56:07.405+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2015-07-01 19:56:07.409+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 3,92 GB
+    Free Physical memory: 1,05 GB
+    Committed virtual memory: 141,88 MB
+    Total swap space: 6,92 GB
+    Free swap space: 1,32 GB
+2015-07-01 19:56:07.418+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 45,62 MB
+    Total memory: 61,50 MB
+    Max   memory: 892,50 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2,44 MB, used=2,43 MB, max=240,00 MB, threshold=0,00 B
+    Memory Pool: Metaspace (Non-heap memory): committed=7,00 MB, used=6,61 MB, max=-1,00 B, threshold=0,00 B
+    Memory Pool: Compressed Class Space (Non-heap memory): committed=1,00 MB, used=883,66 kB, max=1,00 GB, threshold=0,00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=16,00 MB, used=15,88 MB, max=329,50 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=2,50 MB, used=0,00 B, max=2,50 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=43,00 MB, used=0,00 B, max=669,50 MB, threshold=0,00 B
+2015-07-01 19:56:07.426+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 4
+    Process id: 1460@MarceloGagliano
+    Byte order: LITTLE_ENDIAN
+    Local timezone: America/Sao_Paulo
+2015-07-01 19:56:07.441+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 25.45-b02
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dfile.encoding=Cp1252]
+2015-07-01 19:56:07.445+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-io-2.2.3.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-shell-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-linux-armv7hf.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/sunmscapi.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/GephiStream/gs-core-1.2.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-solaris-i586.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-windows-amd64.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-udc-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-linux-i586.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-lucene-index-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/parboiled-core-1.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/applet-launcher.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/sunpkcs11.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/localedata.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/scala-library-2.10.4.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-windows-i586.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-cypher-compiler-2.1-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-cypher-2.1.6.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\classes
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-linux-armv7hf.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/GephiStream/gs-ui-1.2.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-kernel-2.1.6.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/GephiStream/gs-algo-1.2.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\jce.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-jmx-2.1.6.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-solaris-i586.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/org.jzy3d-0.9.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-primitive-collections-2.1.6.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\rt.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Misc/org.convexhull.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Utils/hamcrest-core-1.3.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-linux-armv7.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-macosx-universal.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-graph-algo-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Utils/junit-4.12.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-cypher-commons-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-linux-i586.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\resources.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/neo4j-graph-matching-2.1.6.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-linux-amd64.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/zipfs.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-windows-i586.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-linux-armv7.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/cldrdata.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/server-api-2.1.6.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-linux-amd64.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Misc/swt.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-solaris-amd64.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/sunec.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/lucene-core-3.6.2.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-solaris-amd64.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Misc/opencsv-2.1.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/jaccess.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/access-bridge-64.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Misc/swt-debug.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/parboiled-scala_2.10-1.1.6.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/nashorn.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/GephiStream/gephi-toolkit.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_45/lib/ext/jfxrt.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Graph/Neo4J/opencsv-2.3.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/bin/
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/gluegen-rt-natives-macosx-universal.jar
+     [classpath + loader.0] file:/C:/Users/marce_000/git/Beta001/lib/Plotter/WSjzy3D/jogl-all-natives-windows-amd64.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar
+2015-07-01 19:56:07.463+0000 INFO  [org.neo4j]: Library path:
+    C:\Program Files\Java\jre1.8.0_45\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Program Files\Java\jre1.8.0_45\bin\server
+    C:\Program Files\Java\jre1.8.0_45\bin
+    C:\Program Files\Java\jre1.8.0_45\lib\amd64
+    C:\ProgramData\Oracle\Java\javapath
+    C:\Program Files (x86)\Intel\iCLS Client
+    C:\Program Files\Intel\iCLS Client
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86
+    C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64
+    C:\Users\marce_000\git\Beta001
+    C:\Users\marce_000\git\Beta001
+    C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files\Common Files\Autodesk Shared
+    C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin
+    C:\Program Files\Microsoft\Web Platform Installer
+    C:\Program Files\Intel\WiFi\bin
+    C:\Program Files\Common Files\Intel\WirelessCommon
+    C:\Program Files (x86)\Skype\Phone
+    C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+    C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0
+    C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+    C:\Program Files\Java\jdk1.7.0_45
+    C:\DEV\eclipse
+    C:\Users\marce_000\git\Beta001
+    C:\Users\marce_000\git\Beta001
+2015-07-01 19:56:07.476+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = C:\Program Files\Java\jre1.8.0_45\bin
+    user.country.format = BR
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = 
+    user.dir = C:\Users\marce_000\git\Beta001
+    user.variant = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\marce_000
+    user.timezone = America/Sao_Paulo
+    file.encoding = Cp1252
+    user.name = marce_000
+    sun.java.command = net.protheos.graph.database.GraphBase
+    sun.arch.data.model = 64
+    user.language = en
+    user.language.format = pt
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2015-07-01 19:56:07.481+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface Microsoft Kernel Debug Network Adapter:
+    Interface Intel(R) Dual Band Wireless-N 7260:
+        address: 192.168.1.116
+        address: fde1:d796:530:0:d0bb:194a:8e90:973f
+        address: fde1:d796:530:0:f494:f3d9:8f05:bf5
+        address: fe80:0:0:0:d0bb:194a:8e90:973f%wlan0
+    Interface Realtek PCIe GBE Family Controller:
+        address: fe80:0:0:0:ad40:d190:a9b0:8890%eth1
+    Interface Teredo Tunneling Pseudo-Interface:
+        address: 2001:0:5ef5:79fb:1452:150e:3771:8519
+        address: fe80:0:0:0:1452:150e:3771:8519%net0
+    Interface Microsoft Wi-Fi Direct Virtual Adapter:
+        address: fe80:0:0:0:18be:ec95:5158:eff3%wlan1
+    Interface Microsoft Hosted Network Virtual Adapter:
+        address: fe80:0:0:0:81a8:9777:ede2:6de%wlan2
+    Interface Bluetooth Device (RFCOMM Protocol TDI):
+    Interface Bluetooth Device (Personal Area Network):
+    Interface Microsoft ISATAP Adapter #2:
+        address: fe80:0:0:0:0:5efe:c0a8:174%net2
+    Interface Microsoft ISATAP Adapter #3:
+    Interface Microsoft ISATAP Adapter #4:
+    Interface Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000:
+    Interface Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-Virtual WiFi Filter Driver-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-Native WiFi Filter Driver-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-QoS Packet Scheduler-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Hosted Network Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Hosted Network Virtual Adapter-Native WiFi Filter Driver-0000:
+    Interface Microsoft Hosted Network Virtual Adapter-QoS Packet Scheduler-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Hosted Network Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-07-01 19:56:07.534+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2015-07-01 19:56:07.667+0000 INFO  [org.neo4j]: Creating new db @ target\graphbase\neostore
+2015-07-01 19:56:07.831+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:07.833+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:07.835+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.844+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.864+0000 INFO  [org.neo4j]: [target\graphbase\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:07.865+0000 INFO  [org.neo4j]: [target\graphbase\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:07.866+0000 INFO  [org.neo4j]: target\graphbase\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.874+0000 INFO  [org.neo4j]: target\graphbase\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.900+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:07.901+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:07.902+0000 INFO  [org.neo4j]: [target\graphbase\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:07.902+0000 INFO  [org.neo4j]: [target\graphbase\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:07.903+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.strings] brickCount=0 brickSize=48128b mappedMem=48234496b (storeSize=128b)
+2015-07-01 19:56:07.904+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:07.905+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:07.906+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.arrays] brickCount=0 brickSize=55552b mappedMem=55574528b (storeSize=128b)
+2015-07-01 19:56:07.908+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db] brickCount=0 brickSize=566210b mappedMem=56623104b (storeSize=0b)
+2015-07-01 19:56:07.912+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshipstore.db] brickCount=0 brickSize=692036b mappedMem=69206016b (storeSize=0b)
+2015-07-01 19:56:07.913+0000 INFO  [org.neo4j]: [target\graphbase\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-07-01 19:56:07.916+0000 INFO  [org.neo4j]: [target\graphbase\neostore.nodestore.db] brickCount=0 brickSize=157275b mappedMem=15728640b (storeSize=0b)
+2015-07-01 19:56:07.917+0000 INFO  [org.neo4j]: [target\graphbase\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2015-07-01 19:56:07.923+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-07-01 19:56:07.924+0000 INFO  [org.neo4j]: [target\graphbase\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:07.929+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.936+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.945+0000 INFO  [org.neo4j]: target\graphbase\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.952+0000 INFO  [org.neo4j]: target\graphbase\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.959+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.967+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.974+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.981+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.988+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:07.998+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.006+0000 INFO  [org.neo4j]: target\graphbase\neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.013+0000 INFO  [org.neo4j]: target\graphbase\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.020+0000 INFO  [org.neo4j]: target\graphbase\neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.028+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshipgroupstore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.036+0000 INFO  [org.neo4j]: target\graphbase\neostore hit=0 miss=10 switches=0 ooe=0
+2015-07-01 19:56:08.052+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:08.052+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:08.053+0000 INFO  [org.neo4j]: [target\graphbase\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:08.054+0000 INFO  [org.neo4j]: [target\graphbase\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:08.054+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.strings] brickCount=0 brickSize=48128b mappedMem=48234496b (storeSize=128b)
+2015-07-01 19:56:08.055+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-07-01 19:56:08.056+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-07-01 19:56:08.057+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db.arrays] brickCount=0 brickSize=55552b mappedMem=55574528b (storeSize=128b)
+2015-07-01 19:56:08.057+0000 INFO  [org.neo4j]: [target\graphbase\neostore.propertystore.db] brickCount=0 brickSize=566210b mappedMem=56623104b (storeSize=0b)
+2015-07-01 19:56:08.058+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshipstore.db] brickCount=0 brickSize=692036b mappedMem=69206016b (storeSize=0b)
+2015-07-01 19:56:08.059+0000 INFO  [org.neo4j]: [target\graphbase\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-07-01 19:56:08.060+0000 INFO  [org.neo4j]: [target\graphbase\neostore.nodestore.db] brickCount=0 brickSize=157275b mappedMem=15728640b (storeSize=0b)
+2015-07-01 19:56:08.061+0000 INFO  [org.neo4j]: [target\graphbase\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2015-07-01 19:56:08.061+0000 INFO  [org.neo4j]: [target\graphbase\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-07-01 19:56:08.062+0000 INFO  [org.neo4j]: [target\graphbase\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2015-07-01 19:56:08.144+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-07-01 19:56:08.167+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-07-01 19:56:08.256+0000 INFO  [org.neo4j]: Opened logical log [target\graphbase\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2015-07-01 19:56:08.265+0000 INFO  [org.neo4j]: Rebuilding lucene scan store, this may take a while
+2015-07-01 19:56:08.266+0000 INFO  [org.neo4j]: Lucene scan store rebuilt (roughly -1 nodes)
+2015-07-01 19:56:08.270+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2015-07-01 19:56:08.276+0000 INFO  [org.neo4j]: Kernel health set to OK
+2015-07-01 19:56:08.287+0000 INFO  [org.neo4j]: Opened logical log [target\graphbase\index\lucene.log.1] version=0, lastTxId=1 (clean)
+2015-07-01 19:56:08.294+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-07-01 19:56:08.294+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1435780567678, randomId=8476190935199318363, storeVersion=14406081294923270, upgradeTime=1435780567678, upgradeId=8476190935199318363}
+2015-07-01 19:56:08.294+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.6
+2015-07-01 19:56:08.294+0000 INFO  [org.neo4j]: Neo4j component versions:
+2015-07-01 19:56:08.298+0000 INFO  [org.neo4j]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.298+0000 INFO  [org.neo4j]:   neo4j-udc, version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.298+0000 INFO  [org.neo4j]:   Neo4j Server API (server-api), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.298+0000 INFO  [org.neo4j]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - JMX support (neo4j-jmx), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - Cypher (neo4j-cypher), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - Generic shell (neo4j-shell), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-07-01 19:56:08.299+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-07-01 19:56:08.301+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-07-01 19:56:08.302+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.3
+      SchemaStore v0.A.3
+      NodeStore v0.A.3
+      RelationshipStore v0.A.3
+      RelationshipTypeStore v0.A.3
+      LabelTokenStore v0.A.3
+      PropertyStore v0.A.3
+      PropertyIndexStore v0.A.3
+      StringPropertyStore v0.A.3
+      ArrayPropertyStore v0.A.3
+      RelationshipGroupStore v0.A.3
+2015-07-01 19:56:08.305+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-07-01 19:56:08.305+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-07-01 19:56:08.305+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      SchemaStore: used=1 high=0
+      NodeStore: used=0 high=-1
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      LabelTokenStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+      RelationshipGroupStore: used=1 high=0
+2015-07-01 19:56:08.309+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-07-01 19:56:08.309+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2015-07-01 19:56:08.309+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2015-07-01 19:56:08.310+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-07-01 19:56:08.311+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 111763517440 / 1779093504 / 1
+Storage files: (filename : modification date - size)
+      active_tx_log: 2015-07-01T16:56:08-0300 - 11,00 B
+      index:
+        lucene-store.db: 2015-07-01T16:56:08-0300 - 40,00 B
+        lucene.log.1: 2015-07-01T16:56:08-0300 - 16,00 B
+        lucene.log.active: 2015-07-01T16:56:08-0300 - 4,00 B
+      - Total: 2015-07-01T16:56:08-0300 - 60,00 B
+      lock: 2015-07-01T16:56:07-0300 - 0,00 B
+      messages.log: 2015-07-01T16:56:07-0300 - 27,77 kB
+      neostore: 2015-07-01T16:56:08-0300 - 81,00 B
+      neostore.id: 2015-07-01T16:56:08-0300 - 9,00 B
+      neostore.labeltokenstore.db: 2015-07-01T16:56:08-0300 - 0,00 B
+      neostore.labeltokenstore.db.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.labeltokenstore.db.names: 2015-07-01T16:56:08-0300 - 38,00 B
+      neostore.labeltokenstore.db.names.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.nodestore.db: 2015-07-01T16:56:08-0300 - 0,00 B
+      neostore.nodestore.db.id: 2015-07-01T16:56:08-0300 - 9,00 B
+      neostore.nodestore.db.labels: 2015-07-01T16:56:08-0300 - 68,00 B
+      neostore.nodestore.db.labels.id: 2015-07-01T16:56:08-0300 - 9,00 B
+      neostore.propertystore.db: 2015-07-01T16:56:08-0300 - 0,00 B
+      neostore.propertystore.db.arrays: 2015-07-01T16:56:08-0300 - 128,00 B
+      neostore.propertystore.db.arrays.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.propertystore.db.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.propertystore.db.index: 2015-07-01T16:56:08-0300 - 0,00 B
+      neostore.propertystore.db.index.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.propertystore.db.index.keys: 2015-07-01T16:56:08-0300 - 38,00 B
+      neostore.propertystore.db.index.keys.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.propertystore.db.strings: 2015-07-01T16:56:08-0300 - 128,00 B
+      neostore.propertystore.db.strings.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.relationshipgroupstore.db: 2015-07-01T16:56:08-0300 - 25,00 B
+      neostore.relationshipgroupstore.db.id: 2015-07-01T16:56:08-0300 - 9,00 B
+      neostore.relationshipstore.db: 2015-07-01T16:56:08-0300 - 0,00 B
+      neostore.relationshipstore.db.id: 2015-07-01T16:56:08-0300 - 9,00 B
+      neostore.relationshiptypestore.db: 2015-07-01T16:56:08-0300 - 0,00 B
+      neostore.relationshiptypestore.db.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.relationshiptypestore.db.names: 2015-07-01T16:56:08-0300 - 38,00 B
+      neostore.relationshiptypestore.db.names.id: 2015-07-01T16:56:07-0300 - 9,00 B
+      neostore.schemastore.db: 2015-07-01T16:56:08-0300 - 64,00 B
+      neostore.schemastore.db.id: 2015-07-01T16:56:08-0300 - 9,00 B
+      nioneo_logical.log.1: 2015-07-01T16:56:08-0300 - 16,00 B
+      nioneo_logical.log.active: 2015-07-01T16:56:08-0300 - 4,00 B
+      schema:
+        label:
+          lucene:
+            write.lock: 2015-07-01T16:56:08-0300 - 0,00 B
+          - Total: 2015-07-01T16:56:08-0300 - 0,00 B
+        - Total: 2015-07-01T16:56:08-0300 - 0,00 B
+      - Total: 2015-07-01T16:56:08-0300 - 0,00 B
+      store_lock: 2015-07-01T16:56:07-0300 - 0,00 B
+      tm_tx_log.1: 2015-07-01T16:56:08-0300 - 0,00 B
+2015-07-01 19:56:08.344+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-07-01 19:56:08.391+0000 INFO  [org.neo4j]: Database is now ready
+2015-07-01 19:56:08.478+0000 INFO  [org.neo4j]: Shutdown started
+2015-07-01 19:56:08.479+0000 INFO  [org.neo4j]: Database is now unavailable
+2015-07-01 19:56:08.489+0000 INFO  [org.neo4j]: Closed log target\graphbase\index\lucene.log
+2015-07-01 19:56:08.499+0000 INFO  [org.neo4j]: TM shutting down
+2015-07-01 19:56:08.544+0000 INFO  [org.neo4j]: Closed log target\graphbase\nioneo_logical.log
+2015-07-01 19:56:08.546+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshiptypestore.db.names hit=0 miss=1 switches=0 ooe=0
+2015-07-01 19:56:08.554+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshiptypestore.db hit=0 miss=1 switches=0 ooe=0
+2015-07-01 19:56:08.561+0000 INFO  [org.neo4j]: target\graphbase\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.570+0000 INFO  [org.neo4j]: target\graphbase\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.577+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.590+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.index.keys hit=0 miss=1 switches=0 ooe=0
+2015-07-01 19:56:08.597+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.index hit=0 miss=1 switches=0 ooe=0
+2015-07-01 19:56:08.604+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.611+0000 INFO  [org.neo4j]: target\graphbase\neostore.propertystore.db hit=2 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.618+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshipstore.db hit=1 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.625+0000 INFO  [org.neo4j]: target\graphbase\neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.631+0000 INFO  [org.neo4j]: target\graphbase\neostore.nodestore.db hit=3 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.638+0000 INFO  [org.neo4j]: target\graphbase\neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.647+0000 INFO  [org.neo4j]: target\graphbase\neostore.relationshipgroupstore.db hit=0 miss=0 switches=0 ooe=0
+2015-07-01 19:56:08.656+0000 INFO  [org.neo4j]: target\graphbase\neostore hit=0 miss=24 switches=0 ooe=0
+2015-07-01 19:56:08.664+0000 INFO  [org.neo4j]: NeoStore closed
+2015-07-01 19:56:08.664+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2015-07-01 19:56:08.665+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
