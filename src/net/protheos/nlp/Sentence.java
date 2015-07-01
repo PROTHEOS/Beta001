@@ -6,7 +6,7 @@
  * Time: 08:05:50
  * Developer: "Marcelo Gagliano"
  */
-package net.protheos.brain.nlp;
+package net.protheos.nlp;
 
 /**
  * @author "Marcelo Gagliano"

@@ -6,16 +6,17 @@
  * Time: 08:30:19
  * Developer: "Marcelo Gagliano"
  */
-package test.protheos.brain.nlp;
+package test.protheos.nlp;
 
 import static org.junit.Assert.*;
-import net.protheos.brain.nlp.Sentence;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import net.protheos.nlp.Sentence;
 
 /**
  * @author "Marcelo Gagliano"

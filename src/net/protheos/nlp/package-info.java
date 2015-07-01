@@ -10,4 +10,4 @@
  * @author "Marcelo Gagliano"
  *
  */
-package net.protheos.brain.nlp;
+package net.protheos.nlp;
