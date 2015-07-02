@@ -125,34 +125,12 @@ public class GraphBase {
 	}
 
 
-	private static Node getNeoNode()
-	{
+	private static Node getPrimeNode() {
 		return graphDb.getNodeById( nodeID )
 				.getSingleRelationship( RelTypes.IS, Direction.OUTGOING )
 				.getEndNode();
 	}
 
-
-	public static String printNeoFriends() {
-		try ( Transaction tx = graphDb.beginTx() )
-		{
-			Node neoNode = getNeoNode();
-			// START SNIPPET: friends-usage
-			int numberOfFriends = 0;
-			String output = neoNode.getProperty( "name" ) + "\n";
-			Traverser friendsTraverser = getFriends( neoNode );
-			for ( Path friendPath : friendsTraverser )
-			{
-				output += "At depth " + friendPath.length() + " => "
-						+ friendPath.endNode()
-						.getProperty( "name" ) + "\n";
-				numberOfFriends++;
-			}
-			output += "Number of friends found: " + numberOfFriends + "\n";
-			// END SNIPPET: friends-usage
-			return output;
-		}
-	}
 
 	public String toJsonD3Format() {
 		String s = "[ {" + "\n";
@@ -162,42 +140,25 @@ public class GraphBase {
 		return s;
 	}
 
-	// START SNIPPET: get-friends
-	private static Traverser getFriends(
-			final Node person )
-	{
-		TraversalDescription td = graphDb.traversalDescription()
-				.breadthFirst()
-				.relationships( RelTypes.IS, Direction.OUTGOING )
-				.evaluator( Evaluators.excludeStartPosition() );
-		return td.traverse( person );
-	}
-	// END SNIPPET: get-friends
-
-	public String printMatrixHackers()
-	{
-		try ( Transaction tx = graphDb.beginTx() )
-		{
-			// START SNIPPET: find--hackers-usage
+	public String toString() {
+		try ( Transaction tx = graphDb.beginTx() ){
+			
 			String output = "Hackers:\n";
-			int numberOfHackers = 0;
-			Traverser traverser = findHackers( getNeoNode() );
+			Traverser traverser = findNodes( getPrimeNode() );
 			for ( Path hackerPath : traverser )
 			{
 				output += "At depth " + hackerPath.length() + " => "
 						+ hackerPath.endNode()
 						.getProperty( "name" ) + "\n";
-				numberOfHackers++;
+		
 			}
-			output += "Number of hackers found: " + numberOfHackers + "\n";
 			// END SNIPPET: find--hackers-usage
 			return output;
 		}
 	}
 
 	// START SNIPPET: find-hackers
-	private Traverser findHackers( final Node startNode )
-	{
+	private Traverser findNodes(final Node startNode) {
 		TraversalDescription td = graphDb.traversalDescription()
 				.breadthFirst()
 				.relationships( RelTypes.IS, Direction.OUTGOING )
@@ -208,20 +169,19 @@ public class GraphBase {
 	}
 	// END SNIPPET: find-hackers
 
-	private void registerShutdownHook()
-	{
+	private void registerShutdownHook() {
 		// Registers a shutdown hook for the Neo4j instance so that it
 		// shuts down nicely when the VM exits (even if you "Ctrl-C" the
 		// running example before it's completed)
 		Runtime.getRuntime()
-		.addShutdownHook( new Thread()
-		{
+		.addShutdownHook(new Thread() {
 			@Override
 			public void run()
 			{
 				graphDb.shutdown();
 			}
-		} );
+		} 
+		);
 	}
 }
 

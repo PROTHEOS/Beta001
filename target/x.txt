@@ -1,0 +1,4 @@
+create (_0)
+create (_1 {`desc`:"MAN"})
+create (_2 {`desc`:"SOCRATES"})
+create _2-[:`IS`]->_1
