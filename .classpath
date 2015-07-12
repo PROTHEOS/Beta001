@@ -6,5 +6,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Misc"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Plotter"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Utils"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Voice"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
