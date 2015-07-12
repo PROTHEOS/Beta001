@@ -73,7 +73,7 @@ public class GraphBase {
 		base.setUp();
 
 		try ( Transaction tx = graphDb.beginTx() ) {
-			File zeta = new File ("target/x.txt");
+			File zeta = new File ("target/output.txt");
 			PrintWriter out = new PrintWriter(new OutputStreamWriter(new FileOutputStream(zeta), "UTF-8"));    
 			DatabaseSubGraph sub = new DatabaseSubGraph(graphDb);
 			SubGraphExporter sc = new SubGraphExporter(sub);
